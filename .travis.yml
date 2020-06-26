@@ -1,9 +1,11 @@
 language : go
 go :
--1.14.3
+- 1.14.3
+- master
 
 script:
  - go test -v ./... 
+ 
 deploy:
     github-token:$GITHUB_TOKEN
     on:
